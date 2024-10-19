@@ -1,5 +1,3 @@
-!pip install transformers gradio torch pandas fuzzywuzzy
-
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import gradio as gr

@@ -40,7 +40,7 @@ def exact_match(predicted_answer, reference_answer):
     return int(predicted_answer.strip() == reference_answer.strip())
 
 # Load dataset
-dataset = pd.read_json('/content/100scoredataset.json')
+dataset = pd.read_json('/content/scoredataset.json')
 
 # Evaluation function for pass@1 and pass@10
 def evaluate_model(dataset):

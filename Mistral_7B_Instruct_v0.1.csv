@@ -1,0 +1,437 @@
+question_id,algebraic_word_problem,reference_answer,step_by_step_solution,predicted_answer,topic,difficulty,fuzzy_score
+1,John has 5 apples. He buys 3 more each day. How many after 4 days?,17,"Day 1: 5 + 3 = 8 apples
+Day 2: 8 + 3 = 11 apples
+Day 3: 11 + 3 = 14 apples
+Day 4: 14 + 3 = 17 apples","Solve the following math problem: John has 5 apples. He buys 3 more each day. How many after 4 days?
+Answer: 14",Simple Equations,Easy,2
+2,A pen costs $2. How much will 4 pens cost?,8,4 pens * $2/pen = $8,"Solve the following math problem: A pen costs $2. How much will 4 pens cost?
+Answer: $8",Basic Arithmetic,Easy,2
+3,"Tom is 5 years younger than Jane. If Jane is 12, how old is Tom?",7,Tom = Jane's age - 5 = 12 - 5 = 7,"Solve the following math problem: Tom is 5 years younger than Jane. If Jane is 12, how old is Tom?
+Answer: 7",Age Problems (Basic),Easy,2
+4,A car travels at 30 miles per hour. How far does it travel in 2 hours?,60,Distance = Speed * Time = 30 miles/hour * 2 hours = 60 miles,"Solve the following math problem: A car travels at 30 miles per hour. How far does it travel in 2 hours?
+Answer: 60 miles",Distance-Rate-Time,Easy,3
+5,John and Mary together have 30 apples. John has 5 more apples than Mary. How many apples does each of them have?,John has 17 apples and Mary has 13 apples,"Let Mary's apples = x
+John's apples = x + 5
+x + (x + 5) = 30
+2x + 5 = 30
+2x = 25
+x = 12.5
+John = 17.5, Mary = 12.5 (rounding for this example)","Solve the following math problem: John and Mary together have 30 apples. John has 5 more apples than Mary. How many apples does each of them have?
+Answer: John has 20 apples, Mary has 10 apples.",Equations with Two Variables,Medium,32
+6,"A solution contains 30% sugar. If there are 5 liters of solution, how much sugar is in the solution?",1.5,Amount of sugar = 30% of 5 liters = 0.3 * 5 = 1.5 liters,"Solve the following math problem: A solution contains 30% sugar. If there are 5 liters of solution, how much sugar is in the solution?
+Answer: 1.5 kg",Mixture Problems,Medium,4
+7,"John takes 4 hours to paint a wall, while Mary takes 6 hours. How long will it take them to paint the wall together?",2.4,"John's rate = 1/4 walls/hour, Mary's rate = 1/6 walls/hour
+Total rate = 1/4 + 1/6 = 5/12 walls/hour
+Time = 1/(5/12) = 12/5 = 2.4 hours","Solve the following math problem: John takes 4 hours to paint a wall, while Mary takes 6 hours. How long will it take them to paint the wall together?
+Answer: 2.67 hours (approximately)",Work Problems,Medium,2
+8,"In 5 years, Peter will be twice as old as he was 3 years ago. How old is Peter now?",11,"Let Peter's current age = x
+In 5 years, Peter's age = x + 5
+3 years ago, Peter's age = x - 3
+x + 5 = 2(x - 3)
+x + 5 = 2x - 6
+x = 11","Solve the following math problem: In 5 years, Peter will be twice as old as he was 3 years ago. How old is Peter now?
+Answer: Peter is 12 years old now.
+
+Here's the reasoning:
+
+1. Let P represent Peter's current age.
+2. Three years ago, Peter was P - 3 years old.
+3. In 5 years, Peter will be P + 5 years old.
+4. According to the problem, in 5 years, Peter will be twice as old as he was 3 years ago. So, we can write this equation: P + 5 = 2(P - 3).
+5. Expanding the equation, we get: P + 5 = 2P - 6.
+6. Rearranging the equation to isolate P,",Age Problems (Complex),Medium,1
+9,"Tom invests $1,000 at 5% interest, compounded annually. How much money will he have after 3 years?","1,157.63","A = P(1 + r/n)^(nt)
+A = 1000(1 + 0.05/1)^(1*3)
+A = 1000(1.05)^3 = 1000 * 1.157625 = $1,157.63","Solve the following math problem: Tom invests $1,000 at 5% interest, compounded annually. How much money will he have after 3 years?
+Answer: $1,157.63",Investment Problems,Medium,10
+10,"A rectangular garden has a perimeter of 30 meters, and its area is 50 square meters. What are the dimensions of the garden?",5 meters by 10 meters,"Let length = l and width = w
+Perimeter = 2(l + w) = 30
+Area = l * w = 50
+Solve system of equations: l + w = 15, lw = 50","Solve the following math problem: A rectangular garden has a perimeter of 30 meters, and its area is 50 square meters. What are the dimensions of the garden?
+Answer: 10 meters by 5 meters",Quadratic Equations,Hard,18
+11,"A company sells two types of gadgets. Gadget A costs $5, and Gadget B costs $10. If 50 gadgets are sold for a total of $350, how many of each type were sold?",30 Gadget A and 20 Gadget B,"Let number of Gadget A = x, number of Gadget B = y
+x + y = 50
+5x + 10y = 350
+Solve system of equations","Solve the following math problem: A company sells two types of gadgets. Gadget A costs $5, and Gadget B costs $10. If 50 gadgets are sold for a total of $350, how many of each type were sold?
+Answer: 25 of Gadget A and 25 of Gadget B",Systems of Equations,Hard,19
+12,"The ratio of boys to girls in a class is 3:5. If there are 64 students in total, how many are boys and how many are girls?",24 boys and 40 girls,"Let boys = 3x and girls = 5x
+Total students = 3x + 5x = 64
+8x = 64
+x = 8
+Boys = 3 * 8 = 24, Girls = 5 * 8 = 40","Solve the following math problem: The ratio of boys to girls in a class is 3:5. If there are 64 students in total, how many are boys and how many are girls?
+Answer: 24 boys and 40 girls",Ratio and Proportion Problems,Hard,20
+13,"Machine A can complete a job in 4 hours, and Machine B can complete the same job in 6 hours. After working together for 2 hours, Machine A breaks down. How long will Machine B take to finish the job?",2.67,"Rate of Machine A = 1/4 job/hour, Rate of Machine B = 1/6 job/hour
+Together for 2 hours: (1/4 + 1/6) * 2 = 5/12 job completed
+Remaining job = 1 - 5/12 = 7/12
+Time for Machine B to finish = (7/12) / (1/6) = 7/2 = 3.5 hours","Solve the following math problem: Machine A can complete a job in 4 hours, and Machine B can complete the same job in 6 hours. After working together for 2 hours, Machine A breaks down. How long will Machine B take to finish the job?
+Answer: 2 additional hours",Work Problems (Complex),Hard,1
+14,"A shopkeeper sells an item for $240, making a 20% profit. What was the cost price of the item?",200,"Selling price = Cost price * (1 + Profit %)
+240 = Cost price * 1.2
+Cost price = 240 / 1.2 = $200","Solve the following math problem: A shopkeeper sells an item for $240, making a 20% profit. What was the cost price of the item?
+Answer: $192",Profit and Loss,Hard,3
+15,Lisa has 12 apples. She gives 3 apples to each of her friends. How many friends does she give apples to?,4,Number of friends = 12 apples / 3 apples per friend = 4 friends,"Solve the following math problem: Lisa has 12 apples. She gives 3 apples to each of her friends. How many friends does she give apples to?
+Answer: 4 friends",Simple Equations,Easy,1
+16,"If a pen costs $3, how much will 6 pens cost?",18,6 pens * $3/pen = $18,"Solve the following math problem: If a pen costs $3, how much will 6 pens cost?
+Answer: 6 x $3 = $18",Basic Arithmetic,Easy,4
+17,"Sam is 7 years older than Tom. If Tom is 8 years old, how old is Sam?",15,Sam = Tom's age + 7 = 8 + 7 = 15 years old,"Solve the following math problem: Sam is 7 years older than Tom. If Tom is 8 years old, how old is Sam?
+Answer: Sam is 15 years old.",Age Problems (Basic),Easy,3
+18,A car travels at 45 miles per hour. How far will it travel in 3 hours?,135,Distance = Speed * Time = 45 miles/hour * 3 hours = 135 miles,"Solve the following math problem: A car travels at 45 miles per hour. How far will it travel in 3 hours?
+Answer: The car will travel 135 miles in 3 hours.",Distance-Rate-Time,Easy,4
+19,Sara and Jane together have 50 books. Sara has 10 more books than Jane. How many books does each have?,Sara has 30 books and Jane has 20 books,"Let Jane's books = x
+Sara's books = x + 10
+x + (x + 10) = 50
+2x + 10 = 50
+2x = 40
+x = 20
+Sara = 30, Jane = 20","Solve the following math problem: Sara and Jane together have 50 books. Sara has 10 more books than Jane. How many books does each have?
+Answer: Sara has 30 books and Jane has 20 books.",Equations with Two Variables,Medium,35
+20,"A mixture contains 40% salt. If there are 10 liters of mixture, how much salt is in it?",4,Amount of salt = 40% of 10 liters = 0.4 * 10 = 4 liters,"Solve the following math problem: A mixture contains 40% salt. If there are 10 liters of mixture, how much salt is in it?
+Answer: 4 liters of salt.",Mixture Problems,Medium,1
+21,"John paints a room in 5 hours, and Mary paints the same room in 10 hours. How long will it take them to paint the room together?",3.33,"John's rate = 1/5 rooms/hour, Mary's rate = 1/10 rooms/hour
+Total rate = 1/5 + 1/10 = 3/10 rooms/hour
+Time = 1/(3/10) = 10/3 = 3.33 hours","Solve the following math problem: John paints a room in 5 hours, and Mary paints the same room in 10 hours. How long will it take them to paint the room together?
+Answer: 2.5 hours",Work Problems,Medium,1
+22,"In 4 years, Sarah will be three times as old as she was 2 years ago. How old is Sarah now?",6,"Let Sarah's current age = x
+In 4 years, Sarah's age = x + 4
+2 years ago, Sarah's age = x - 2
+x + 4 = 3(x - 2)
+x + 4 = 3x - 6
+x = 6","Solve the following math problem: In 4 years, Sarah will be three times as old as she was 2 years ago. How old is Sarah now?
+Answer: 16",Age Problems (Complex),Medium,1
+23,"Anna invests $2,000 at 3% interest, compounded annually. How much money will she have after 5 years?","2,318.54","A = P(1 + r/n)^(nt)
+A = 2000(1 + 0.03/1)^(1*5)
+A = 2000(1.03)^5 = 2000 * 1.159274 = $2,318.54","Solve the following math problem: Anna invests $2,000 at 3% interest, compounded annually. How much money will she have after 5 years?
+Answer: $2,363.86",Investment Problems,Medium,5
+24,"A rectangular field has a perimeter of 40 meters, and its area is 96 square meters. What are the dimensions of the field?",8 meters by 12 meters,"Let length = l and width = w
+Perimeter = 2(l + w) = 40
+Area = l * w = 96
+Solve system of equations: l + w = 20, lw = 96","Solve the following math problem: A rectangular field has a perimeter of 40 meters, and its area is 96 square meters. What are the dimensions of the field?
+Answer: 8 meters x 12 meters",Quadratic Equations,Hard,19
+25,"A factory sells two types of products. Product A costs $15, and Product B costs $25. If 100 products are sold for a total of $2,000, how many of each product were sold?",80 Product A and 20 Product B,"Let number of Product A = x, number of Product B = y
+x + y = 100
+15x + 25y = 2000
+Solve system of equations","Solve the following math problem: A factory sells two types of products. Product A costs $15, and Product B costs $25. If 100 products are sold for a total of $2,000, how many of each product were sold?
+Answer: 40 units of Product A and 60 units of Product B.",Systems of Equations,Hard,19
+26,"The ratio of dogs to cats in a shelter is 2:3. If there are 75 animals in total, how many are dogs and how many are cats?",30 dogs and 45 cats,"Let dogs = 2x and cats = 3x
+Total animals = 2x + 3x = 75
+5x = 75
+x = 15
+Dogs = 2 * 15 = 30, Cats = 3 * 15 = 45","Solve the following math problem: The ratio of dogs to cats in a shelter is 2:3. If there are 75 animals in total, how many are dogs and how many are cats?
+Answer: There are 30 dogs and 45 cats.",Ratio and Proportion Problems,Hard,18
+27,"Machine C can finish a task in 8 hours, and Machine D can finish the same task in 12 hours. If they work together for 3 hours, how long will Machine C take to complete the rest of the task alone?",2.67,"Rate of Machine C = 1/8 job/hour, Rate of Machine D = 1/12 job/hour
+Together for 3 hours: (1/8 + 1/12) * 3 = 5/24 job completed
+Remaining job = 1 - 5/24 = 19/24
+Time for Machine C to finish = (19/24) / (1/8) = 19/3 = 6.33 hours","Solve the following math problem: Machine C can finish a task in 8 hours, and Machine D can finish the same task in 12 hours. If they work together for 3 hours, how long will Machine C take to complete the rest of the task alone?
+Answer: Machine C will take 4 more hours to complete the rest of the task alone.
+Explanation: Machine C can finish the task in 8 hours, so in 3 hours, it will have completed 3/8 of the task. Machine D can finish the task in 12 hours, so in 3 hours, it will have completed 1/4 of the task. Together, they have completed 3/8 + 1/4 = 11/32 of the task in 3 hours. To find out how long it will take for Machine C to complete the rest of the task alone, we need to divide the remaining portion of the task by Machine C's rate of completion: (",Work Problems (Complex),Hard,1
+28,"A store sells a TV for $600, making a 25% profit. What was the cost price of the TV?",480,"Selling price = Cost price * (1 + Profit %)
+600 = Cost price * 1.25
+Cost price = 600 / 1.25 = $480","Solve the following math problem: A store sells a TV for $600, making a 25% profit. What was the cost price of the TV?
+Answer: $480",Profit and Loss,Hard,4
+29,Jessica has 8 oranges. She buys 5 more every day. How many oranges will she have after 3 days?,23,"Day 1: 8 + 5 = 13 oranges
+Day 2: 13 + 5 = 18 oranges
+Day 3: 18 + 5 = 23 oranges","Solve the following math problem: Jessica has 8 oranges. She buys 5 more every day. How many oranges will she have after 3 days?
+Answer: 26",Simple Equations,Easy,1
+30,A pencil costs $1.50. How much will 8 pencils cost?,12,8 pencils * $1.50/pencil = $12,"Solve the following math problem: A pencil costs $1.50. How much will 8 pencils cost?
+Answer: 12.00",Basic Arithmetic,Easy,4
+31,"Adam is twice as old as Ben. If Ben is 10 years old, how old is Adam?",20,Adam = 2 * Ben's age = 2 * 10 = 20 years old,"Solve the following math problem: Adam is twice as old as Ben. If Ben is 10 years old, how old is Adam?
+Answer: Adam is 20 years old.",Age Problems (Basic),Easy,3
+32,A truck travels at 60 miles per hour. How far will it travel in 5 hours?,300,Distance = Speed * Time = 60 miles/hour * 5 hours = 300 miles,"Solve the following math problem: A truck travels at 60 miles per hour. How far will it travel in 5 hours?
+Answer: The truck will travel 300 miles in 5 hours.",Distance-Rate-Time,Easy,4
+33,John and Anna have 120 marbles in total. John has twice as many marbles as Anna. How many marbles does each have?,John has 80 marbles and Anna has 40 marbles,"Let Anna's marbles = x
+John's marbles = 2x
+x + 2x = 120
+3x = 120
+x = 40
+John = 80, Anna = 40","Solve the following math problem: John and Anna have 120 marbles in total. John has twice as many marbles as Anna. How many marbles does each have?
+Answer: John has 80 marbles and Anna has 40 marbles.",Equations with Two Variables,Medium,35
+34,"A solution contains 25% alcohol. If there are 12 liters of solution, how much alcohol is in the solution?",3,Amount of alcohol = 25% of 12 liters = 0.25 * 12 = 3 liters,"Solve the following math problem: A solution contains 25% alcohol. If there are 12 liters of solution, how much alcohol is in the solution?
+Answer: 3 liters",Mixture Problems,Medium,1
+35,Two workers can complete a task in 5 hours working together. Worker A alone can complete it in 8 hours. How long will Worker B take to complete the task alone?,13.33,"Rate of Worker A = 1/8 jobs/hour
+Let Worker B's rate = 1/x jobs/hour
+Total rate = 1/5 jobs/hour
+1/8 + 1/x = 1/5
+Solve for x = 13.33 hours","Solve the following math problem: Two workers can complete a task in 5 hours working together. Worker A alone can complete it in 8 hours. How long will Worker B take to complete the task alone?
+Answer: Worker B will take 12 hours to complete the task alone.
+Here's the reasoning:
+1. We know that two workers can complete the task in 5 hours together.
+2. We also know that Worker A alone can complete it in 8 hours.
+3. If we subtract the time it takes for Worker A to complete the task alone from the time it takes for both workers to complete the task together, we get the following equation: 5 - 8 = -3.
+4. However, since the time it takes for two workers to complete the task together is actually positive, we made an error in our subtraction.
+5. To correct the equation, we need",Work Problems,Medium,1
+36,"In 6 years, Mike will be twice as old as he was 2 years ago. How old is Mike now?",8,"Let Mike's current age = x
+In 6 years, Mike's age = x + 6
+2 years ago, Mike's age = x - 2
+x + 6 = 2(x - 2)
+x + 6 = 2x - 4
+x = 8","Solve the following math problem: In 6 years, Mike will be twice as old as he was 2 years ago. How old is Mike now?
+Answer: Mike is currently 12 years old.
+
+Here's the reasoning behind this:
+
+1. Let's use algebra again. Let x represent Mike's current age.
+2. Two years ago, Mike's age was x - 2.
+3. In 6 years, Mike's age will be x + 6.
+4. According to the problem, in 6 years, Mike will be twice as old as he was 2 years ago. So, we can write this equation: x + 6 = 2(x - 2).
+5. Expanding the right side of the equation gives us: x + 6 = 2x - 4.",Age Problems (Complex),Medium,0
+37,"Henry invests $1,500 at 4% interest, compounded annually. How much money will he have after 2 years?","1,622.40","A = P(1 + r/n)^(nt)
+A = 1500(1 + 0.04/1)^(1*2)
+A = 1500(1.04)^2 = 1500 * 1.0816 = $1,622.40","Solve the following math problem: Henry invests $1,500 at 4% interest, compounded annually. How much money will he have after 2 years?
+Answer: $1,675.21",Investment Problems,Medium,5
+38,"A rectangular room has a perimeter of 50 meters, and its area is 150 square meters. What are the dimensions of the room?",10 meters by 15 meters,"Let length = l and width = w
+Perimeter = 2(l + w) = 50
+Area = l * w = 150
+Solve system of equations: l + w = 25, lw = 150","Solve the following math problem: A rectangular room has a perimeter of 50 meters, and its area is 150 square meters. What are the dimensions of the room?
+Answer: 10 meters by 15 meters.
+
+Explanation: 
+
+Let's denote the length of the room as L and the width as W.
+
+We know that the perimeter of a rectangle is given by the formula P = 2L + 2W.
+
+In this case, the perimeter is 50 meters, so we have the equation:
+50 = 2L + 2W
+
+We also know that the area of a rectangle is given by the formula A = LW.
+
+In this case, the area is 150 square meters, so we have the equation:
+150 = LW
+
+Now, let'",Quadratic Equations,Hard,7
+39,"A company sells two types of chairs. Chair A costs $30, and Chair B costs $50. If 60 chairs are sold for a total of $2,100, how many of each type were sold?",35 Chair A and 25 Chair B,"Let number of Chair A = x, number of Chair B = y
+x + y = 60
+30x + 50y = 2100
+Solve system of equations","Solve the following math problem: A company sells two types of chairs. Chair A costs $30, and Chair B costs $50. If 60 chairs are sold for a total of $2,100, how many of each type were sold?
+Answer: 20 of Chair A and 40 of Chair B",Systems of Equations,Hard,18
+40,"The ratio of boys to girls in a class is 4:5. If there are 90 students in total, how many are boys and how many are girls?",40 boys and 50 girls,"Let boys = 4x and girls = 5x
+Total students = 4x + 5x = 90
+9x = 90
+x = 10
+Boys = 4 * 10 = 40, Girls = 5 * 10 = 50","Solve the following math problem: The ratio of boys to girls in a class is 4:5. If there are 90 students in total, how many are boys and how many are girls?
+Answer: 40 boys and 50 girls.",Ratio and Proportion Problems,Hard,19
+41,"Machine X can complete a task in 9 hours, and Machine Y can complete it in 12 hours. After working together for 4 hours, Machine X breaks down. How long will Machine Y take to finish the task?",5.33,"Rate of Machine X = 1/9 job/hour, Rate of Machine Y = 1/12 job/hour
+Together for 4 hours: (1/9 + 1/12) * 4 = 7/18 job completed
+Remaining job = 1 - 7/18 = 11/18
+Time for Machine Y to finish = (11/18) / (1/12) = 7.33 hours","Solve the following math problem: Machine X can complete a task in 9 hours, and Machine Y can complete it in 12 hours. After working together for 4 hours, Machine X breaks down. How long will Machine Y take to finish the task?
+Answer: 8 hours",Work Problems (Complex),Hard,1
+42,"A shopkeeper sells an item for $150, making a 10% profit. What was the cost price of the item?",136.36,"Selling price = Cost price * (1 + Profit %)
+150 = Cost price * 1.1
+Cost price = 150 / 1.1 = $136.36","Solve the following math problem: A shopkeeper sells an item for $150, making a 10% profit. What was the cost price of the item?
+Answer: $135",Profit and Loss,Hard,3
+43,Mike starts with 10 pencils. He gives away 2 pencils each day. How many pencils will he have after 5 days?,0,"Day 1: 10 - 2 = 8 pencils
+Day 2: 8 - 2 = 6 pencils
+Day 3: 6 - 2 = 4 pencils
+Day 4: 4 - 2 = 2 pencils
+Day 5: 2 - 2 = 0 pencils","Solve the following math problem: Mike starts with 10 pencils. He gives away 2 pencils each day. How many pencils will he have after 5 days?
+Answer: Mike will have 5 pencils after 5 days.",Simple Equations,Easy,1
+44,A notebook costs $4.50. How much will 5 notebooks cost?,22.50,5 notebooks * $4.50/notebook = $22.50,"Solve the following math problem: A notebook costs $4.50. How much will 5 notebooks cost?
+Answer: $22.50",Basic Arithmetic,Easy,9
+45,"Tom is 3 years younger than Jack. If Jack is 15, how old is Tom?",12,Tom = Jack's age - 3 = 15 - 3 = 12,"Solve the following math problem: Tom is 3 years younger than Jack. If Jack is 15, how old is Tom?
+Answer: 12",Age Problems (Basic),Easy,4
+46,A car travels at 50 miles per hour. How far does it travel in 4 hours?,200,Distance = Speed * Time = 50 miles/hour * 4 hours = 200 miles,"Solve the following math problem: A car travels at 50 miles per hour. How far does it travel in 4 hours?
+Answer: 200 miles",Distance-Rate-Time,Easy,5
+47,John and Mike together have 90 dollars. John has 20 dollars more than Mike. How much does each have?,John has 55 dollars and Mike has 35 dollars,"Let Mike's dollars = x
+John's dollars = x + 20
+x + (x + 20) = 90
+2x + 20 = 90
+2x = 70
+x = 35
+John = 55, Mike = 35","Solve the following math problem: John and Mike together have 90 dollars. John has 20 dollars more than Mike. How much does each have?
+Answer: John has 40 dollars, Mike has 30 dollars.",Equations with Two Variables,Medium,35
+48,"A solution contains 40% salt. If there are 20 liters of solution, how much salt is in the solution?",8,Amount of salt = 40% of 20 liters = 0.4 * 20 = 8 liters,"Solve the following math problem: A solution contains 40% salt. If there are 20 liters of solution, how much salt is in the solution?
+Answer: 8 liters of salt.",Mixture Problems,Medium,1
+49,A car and a bike together can cover a distance in 2 hours. The car alone can cover it in 1.5 hours. How long will the bike take to cover the distance alone?,6,"Rate of car = 1/1.5 distance/hour, Rate of bike = 1/x distance/hour
+Together: 1/1.5 + 1/x = 1/2
+Solve for x = 6 hours","Solve the following math problem: A car and a bike together can cover a distance in 2 hours. The car alone can cover it in 1.5 hours. How long will the bike take to cover the distance alone?
+Answer: The bike will take 3 hours to cover the distance alone.
+Explanation: Let's assume the distance to be covered is D. The car and bike together can cover it in 2 hours, which means their combined speed is D/2. The car alone can cover it in 1.5 hours, which means its speed is D/1.5. Since they are moving at different speeds, we need to find out when the car and bike meet. 
+Let T be the time taken by the bike to meet the car. Then, the car has traveled D/1.5 in T hours, and the bike has traveled D/2 in T hours. Since they meet at the same point, we can",Work Problems,Medium,0
+50,"In 3 years, Anna will be three times as old as she was 5 years ago. How old is Anna now?",7,"Let Anna's current age = x
+In 3 years, Anna's age = x + 3
+5 years ago, Anna's age = x - 5
+x + 3 = 3(x - 5)
+x + 3 = 3x - 15
+x = 7","Solve the following math problem: In 3 years, Anna will be three times as old as she was 5 years ago. How old is Anna now?
+Answer: 15",Age Problems (Complex),Medium,0
+51,A laptop is priced at $900 with a 20% discount. What is the sale price?,720,Sale price = $900 * (1 - 0.20) = $900 * 0.80 = $720,"Solve the following math problem: A laptop is priced at $900 with a 20% discount. What is the sale price?
+Answer: $720",Percentage Problems,Easy,5
+52,A car travels 100 miles in 2 hours. What is the average speed?,50,Speed = Distance / Time = 100 miles / 2 hours = 50 miles per hour,"Solve the following math problem: A car travels 100 miles in 2 hours. What is the average speed?
+Answer: 50 miles per hour",Distance-Rate-Time,Easy,3
+53,"Jack buys 3 shirts, each priced at $30. He gets a $15 discount. How much does he pay?",75,"Total = 3 * $30 = $90
+Discount = $15
+Final amount = $90 - $15 = $75","Solve the following math problem: Jack buys 3 shirts, each priced at $30. He gets a $15 discount. How much does he pay?
+Answer: $45",Simple Equations,Easy,2
+54,A square has a side length of 6 meters. What is its area?,36,Area = side^2 = 6^2 = 36 square meters,"Solve the following math problem: A square has a side length of 6 meters. What is its area?
+Answer: 36 square meters",Geometry,Easy,3
+55,"Tom has 3 times as many books as Lisa. Together, they have 80 books. How many books does each have?","Tom has 60 books, Lisa has 20 books","Let Lisa's books = x
+Tom's books = 3x
+x + 3x = 80
+4x = 80
+x = 20, 3x = 60","Solve the following math problem: Tom has 3 times as many books as Lisa. Together, they have 80 books. How many books does each have?
+Answer: Tom has 60 books, and Lisa has 20 books.",Equations with Two Variables,Medium,32
+56,"A company’s revenue increased by 15% this year. Last year’s revenue was $120,000. What is this year’s revenue?","138,000","New revenue = $120,000 * (1 + 0.15) = $120,000 * 1.15 = $138,000","Solve the following math problem: A company’s revenue increased by 15% this year. Last year’s revenue was $120,000. What is this year’s revenue?
+Answer: $138,000",Percentage Problems,Medium,8
+57,A train is moving at 80 miles per hour. How far will it travel in 3.5 hours?,280,Distance = Speed * Time = 80 miles/hour * 3.5 hours = 280 miles,"Solve the following math problem: A train is moving at 80 miles per hour. How far will it travel in 3.5 hours?
+Answer: 280 miles",Distance-Rate-Time,Medium,5
+58,"A rectangle has a perimeter of 60 meters. If the length is twice the width, what are the dimensions of the rectangle?","Length = 20 meters, Width = 10 meters","Let width = w, length = 2w
+Perimeter = 2(l + w) = 60
+2(2w + w) = 60
+6w = 60
+w = 10, l = 20","Solve the following math problem: A rectangle has a perimeter of 60 meters. If the length is twice the width, what are the dimensions of the rectangle?
+Answer: The dimensions of the rectangle are 20 meters in length and 10 meters in width.
+Explanation: Let's denote the length of the rectangle as L and the width as W. We know that the perimeter of a rectangle is given by the formula P = 2L + 2W. In this case, the perimeter is 60 meters. 
+We also know that the length is twice the width, so L = 2W. 
+Substituting L = 2W into the perimeter formula, we get 60 = 2(2W) + 2W. Simplifying this equation gives us 60 = 4W + 2",Geometry,Medium,9
+59,"A chemical solution contains 30% salt. If there are 40 liters of solution, how much salt is present?",12,Amount of salt = 30% of 40 liters = 0.30 * 40 = 12 liters,"Solve the following math problem: A chemical solution contains 30% salt. If there are 40 liters of solution, how much salt is present?
+Answer: 12 liters of salt",Mixture Problems,Medium,2
+60,Two pipes can fill a tank in 6 hours working together. Pipe A alone can fill it in 9 hours. How long will Pipe B take to fill the tank alone?,18 ,"Rate of Pipe A = 1/9 tanks/hour, Rate of Pipe B = 1/x tanks/hour
+Together: 1/9 + 1/x = 1/6
+Solve for x = 18 hours","Solve the following math problem: Two pipes can fill a tank in 6 hours working together. Pipe A alone can fill it in 9 hours. How long will Pipe B take to fill the tank alone?
+Answer: Pipe B will take 15 hours to fill the tank alone.
+
+Here's the reasoning behind this:
+
+1. We know that Pipe A and Pipe B can fill the tank together in 6 hours.
+2. We also know that Pipe A can fill the tank alone in 9 hours.
+3. Since Pipe A can fill the tank alone in 9 hours, Pipe B must be able to fill the tank alone in 9 hours as well (because they work at the same rate when working together).
+4. However, we need to find out how long it takes for Pipe B to fill the tank alone, not Pipe A.
+5. So, if",Work Problems,Medium,0
+61,"A store sells two types of bags. Bag A costs $50 and Bag B costs $30. If 10 bags are sold for a total of $400, how many of each type were sold?",4 Bag A and 6 Bag B,"Let number of Bag A = x and number of Bag B = y
+x + y = 10
+50x + 30y = 400
+Solve system of equations","Solve the following math problem: A store sells two types of bags. Bag A costs $50 and Bag B costs $30. If 10 bags are sold for a total of $400, how many of each type were sold?
+Answer: 5 Bag A and 5 Bag B.",Systems of Equations,Hard,16
+62,"The ratio of cats to dogs in a shelter is 3:4. If there are 70 animals in total, how many are cats and how many are dogs?",30 cats and 40 dogs,"Let cats = 3x, dogs = 4x
+Total = 3x + 4x = 70
+7x = 70
+x = 10
+Cats = 3 * 10 = 30, Dogs = 4 * 10 = 40","Solve the following math problem: The ratio of cats to dogs in a shelter is 3:4. If there are 70 animals in total, how many are cats and how many are dogs?
+Answer: 30 are cats and 40 are dogs.",Ratio and Proportion Problems,Medium,18
+63,"A machine can complete a task in 12 hours, and another machine can complete it in 16 hours. How long will it take them to finish the task working together?",6.86 ,"Rate of Machine 1 = 1/12 tasks/hour, Rate of Machine 2 = 1/16 tasks/hour
+Together: 1/12 + 1/16 = 7/48
+Time = 1 / (7/48) = 6.86 hours","Solve the following math problem: A machine can complete a task in 12 hours, and another machine can complete it in 16 hours. How long will it take them to finish the task working together?
+Answer: 8 hours",Work Problems,Hard,3
+64,"A rectangular garden has an area of 200 square meters. If the length is 10 meters more than the width, what are the dimensions of the garden?","Length = 20 meters, Width = 10 meters","Let width = w, length = w + 10
+Area = l * w = 200
+(w + 10)w = 200
+Solve quadratic equation","Solve the following math problem: A rectangular garden has an area of 200 square meters. If the length is 10 meters more than the width, what are the dimensions of the garden?
+Answer: 11 meters by 19 meters",Quadratic Equations,Hard,25
+65,"A man invests $5,000 at 6% annual interest, compounded annually. How much will he have after 3 years?","5,955.08","A = P(1 + r/n)^(nt)
+A = 5000(1 + 0.06/1)^(1*3)
+A = 5000(1.06)^3 = $5,955.08","Solve the following math problem: A man invests $5,000 at 6% annual interest, compounded annually. How much will he have after 3 years?
+Answer: $5,796.15",Investment Problems,Medium,4
+66,"The perimeter of a triangle is 36 meters. One side is twice the length of the shortest side, and the third side is 4 meters longer than the shortest side. Find the lengths of all sides.","8 meters, 16 meters, and 12 meters","Let shortest side = x
+Second side = 2x, Third side = x + 4
+x + 2x + (x + 4) = 36
+Solve for x = 8","Solve the following math problem: The perimeter of a triangle is 36 meters. One side is twice the length of the shortest side, and the third side is 4 meters longer than the shortest side. Find the lengths of all sides.
+Answer: 6, 8, 12",Geometry,Medium,21
+67,"A car's value decreases by 20% per year. If the car is currently worth $12,000, what will its value be after 3 years?","6,144","Value = 12000 * (1 - 0.20)^3 = 12000 * 0.80^3 = $6,144","Solve the following math problem: A car's value decreases by 20% per year. If the car is currently worth $12,000, what will its value be after 3 years?
+Answer: $9,600",Depreciation Problems,Medium,1
+68,"Two trains leave a station at the same time, one traveling north at 60 miles per hour and the other traveling east at 80 miles per hour. How far apart are they after 2 hours?",100,"Distance north = 60 * 2 = 120 miles
+Distance east = 80 * 2 = 160 miles
+Use Pythagorean theorem: Distance = sqrt(120^2 + 160^2) = 100 miles","Solve the following math problem: Two trains leave a station at the same time, one traveling north at 60 miles per hour and the other traveling east at 80 miles per hour. How far apart are they after 2 hours?
+Answer: 160 miles",Pythagorean Theorem,Hard,2
+69,"A worker is paid $15 per hour for the first 40 hours and $22.50 for overtime. If he worked 50 hours in a week, how much did he earn?",825,"Regular pay = 40 * $15 = $600
+Overtime pay = 10 * $22.50 = $225
+Total earnings = $600 + $225 = $825","Solve the following math problem: A worker is paid $15 per hour for the first 40 hours and $22.50 for overtime. If he worked 50 hours in a week, how much did he earn?
+Answer: $1,275",Wage Problems,Medium,1
+70,A boat travels 30 miles downstream in 3 hours and returns upstream in 5 hours. What is the speed of the current?,2,"Let boat speed in still water = b, current speed = c
+Downstream speed = b + c = 30/3 = 10 mph
+Upstream speed = b - c = 30/5 = 6 mph
+Solve for c = 2 mph","Solve the following math problem: A boat travels 30 miles downstream in 3 hours and returns upstream in 5 hours. What is the speed of the current?
+Answer: 5 miles per hour",Current-Speed Problems,Medium,0
+71,"A family spends 40% of their income on rent, 25% on food, and saves the rest. If their monthly income is $3,000, how much do they save?","1,050","Savings = 100% - 40% - 25% = 35% of income
+Savings = 35% * 3000 = $1,050","Solve the following math problem: A family spends 40% of their income on rent, 25% on food, and saves the rest. If their monthly income is $3,000, how much do they save?
+Answer: $3,000 x 0.30 = $900
+
+Explanation: To find out how much the family saves each month, we need to calculate the amount spent on rent and food, and then subtract that from their total income. 
+
+First, let's calculate the cost of rent: 
+Rent = Monthly income x Percentage spent on rent 
+Rent = $3,000 x 0.40 
+Rent = $1,200 
+
+Next, let's calculate the cost of food: 
+Food = Monthly income x Percentage spent on food 
+Food = $3,",Percentage Problems,Easy,1
+72,The sum of three consecutive even numbers is 72. What are the numbers?,"22, 24, and 26","Let numbers = x, x + 2, x + 4
+x + (x + 2) + (x + 4) = 72
+3x + 6 = 72
+Solve for x = 22","Solve the following math problem: The sum of three consecutive even numbers is 72. What are the numbers?
+Answer: 24, 26, 22",Consecutive Numbers,Medium,12
+73,A factory can produce 100 units in 5 hours. How many units can it produce in 8 hours?,160 ,"Rate of production = 100/5 = 20 units per hour
+Units in 8 hours = 20 * 8 = 160 units","Solve the following math problem: A factory can produce 100 units in 5 hours. How many units can it produce in 8 hours?
+Answer: 200 units",Proportion Problems,Easy,3
+74,A student scores 85% on a test with 120 questions. How many questions did they answer correctly?,102,Correct answers = 85% of 120 = 0.85 * 120 = 102,"Solve the following math problem: A student scores 85% on a test with 120 questions. How many questions did they answer correctly?
+Answer: 102",Percentage Problems,Easy,4
+75,"A person deposits $2,000 in a bank account with an annual interest rate of 4%. How much interest will they earn in 2 years?",160,"Interest = Principal * Rate * Time
+Interest = 2000 * 0.04 * 2 = $160","Solve the following math problem: A person deposits $2,000 in a bank account with an annual interest rate of 4%. How much interest will they earn in 2 years?
+Answer: $800",Simple Interest Problems,Easy,1
+76,A recipe calls for 2 cups of sugar for every 3 cups of flour. How much sugar is needed for 12 cups of flour?,8,"Ratio of sugar to flour = 2:3
+For 12 cups of flour: (2/3) * 12 = 8 cups of sugar","Solve the following math problem: A recipe calls for 2 cups of sugar for every 3 cups of flour. How much sugar is needed for 12 cups of flour?
+Answer: 8 cups of sugar",Ratios,Easy,1
+77,"A theater has 300 seats. If 80% of the seats are filled, how many seats are empty?",60,"Filled seats = 300 * 0.80 = 240
+Empty seats = 300 - 240 = 60","Solve the following math problem: A theater has 300 seats. If 80% of the seats are filled, how many seats are empty?
+Answer: 240 seats are empty.",Percentage Problems,Easy,1
+78,A bike costs $200 after a 25% discount. What was the original price?,266.67,"Let original price = x
+x * (1 - 0.25) = 200
+x * 0.75 = 200
+x = 200 / 0.75 = $266.67","Solve the following math problem: A bike costs $200 after a 25% discount. What was the original price?
+Answer: $266.67",Percentage Problems,Medium,10
+79,A farmer has 150 apples. He sells them in bags of 6 apples each. How many bags does he sell?,25,Number of bags = 150 / 6 = 25 bags,"Solve the following math problem: A farmer has 150 apples. He sells them in bags of 6 apples each. How many bags does he sell?
+Answer: 25 bags",Division,Easy,3
+80,"A box contains 5 red balls, 8 blue balls, and 7 green balls. What is the probability of drawing a blue ball?",0.32,"Total balls = 5 + 8 + 7 = 20
+Probability of blue = 8 / 20 = 0.32","Solve the following math problem: A box contains 5 red balls, 8 blue balls, and 7 green balls. What is the probability of drawing a blue ball?
+Answer: 8/20 or 0.4",Probability,Medium,2
+81,A car travels 60 miles in 1.5 hours. What is its average speed in miles per hour?,40,Average speed = Distance / Time = 60 miles / 1.5 hours = 40 miles/hour,"Solve the following math problem: A car travels 60 miles in 1.5 hours. What is its average speed in miles per hour?
+Answer: 40 miles per hour",Distance-Rate-Time,Easy,3
+82,"In a class of 30 students, 18 are boys. What fraction of the class are girls?",2/5,"Number of girls = 30 - 18 = 12
+Fraction of girls = 12 / 30 = 2/5","Solve the following math problem: In a class of 30 students, 18 are boys. What fraction of the class are girls?
+Answer: 9/30 = 1/3",Fractions,Easy,2
+83,"If a train leaves the station traveling at 75 miles per hour, how far will it travel in 4 hours?",300,Distance = Speed * Time = 75 miles/hour * 4 hours = 300 miles,"Solve the following math problem: If a train leaves the station traveling at 75 miles per hour, how far will it travel in 4 hours?
+Answer: 300 miles",Distance-Rate-Time,Easy,4
+84,A product originally priced at $50 is marked down by $10. What is the new price?,40,New price = $50 - $10 = $40,"Solve the following math problem: A product originally priced at $50 is marked down by $10. What is the new price?
+Answer: $40",Simple Operations,Easy,3
+85,A rectangular field has a length of 50 meters and a width of 30 meters. What is the area of the field?,"1,500 ","Area = Length * Width = 50 * 30 = 1,500 square meters","Solve the following math problem: A rectangular field has a length of 50 meters and a width of 30 meters. What is the area of the field?
+Answer: The area of the field is 1500 square meters.
+Explanation: To find the area of a rectangle, you need to multiply its length by its width. In this case, the length of the field is 50 meters and the width is 30 meters. So, the area of the field is: 50 x 30 = 1500 square meters.",Geometry,Easy,2
+86,"Two numbers add up to 50. If one number is 10 more than the other, what are the numbers?",20 and 30,"Let the smaller number be x, larger number = x + 10
+x + (x + 10) = 50
+2x + 10 = 50, x = 20","Solve the following math problem: Two numbers add up to 50. If one number is 10 more than the other, what are the numbers?
+Answer: 20 and 30",Linear Equations,Medium,12
+87,"A bag contains 10 red, 6 blue, and 4 green marbles. If one marble is drawn at random, what is the probability it is not blue?",0.80,"Total marbles = 10 + 6 + 4 = 20
+Non-blue marbles = 10 + 4 = 14
+Probability = 14 / 20 = 0.80","Solve the following math problem: A bag contains 10 red, 6 blue, and 4 green marbles. If one marble is drawn at random, what is the probability it is not blue?
+Answer: 16/20 or 8/10",Probability,Medium,3
+88,A cyclist travels 24 miles in 2 hours. What is the average speed in miles per hour?,12,Average speed = Distance / Time = 24 miles / 2 hours = 12 miles/hour,"Solve the following math problem: A cyclist travels 24 miles in 2 hours. What is the average speed in miles per hour?
+Answer: 12 miles/hour",Distance-Rate-Time,Easy,3
+89,"A store sells notebooks for $3 each and pens for $2 each. If a student buys 5 notebooks and 4 pens, how much does the student spend?",23,Total cost = (5 * 3) + (4 * 2) = 15 + 8 = $23,"Solve the following math problem: A store sells notebooks for $3 each and pens for $2 each. If a student buys 5 notebooks and 4 pens, how much does the student spend?
+Answer: $17",Simple Operations,Easy,1
+90,"A box can hold 48 items. If each item takes up 3 cubic inches, what is the total volume of the box?",144,Total volume = 48 items * 3 cubic inches/item = 144 cubic inches,"Solve the following math problem: A box can hold 48 items. If each item takes up 3 cubic inches, what is the total volume of the box?
+Answer: 144 cubic inches",Volume Problems,Easy,4
+91,"A car's fuel efficiency is 25 miles per gallon. If the car has a 15-gallon tank, how many miles can it travel on a full tank?",375,Distance = Fuel efficiency * Gallons = 25 miles/gallon * 15 gallons = 375 miles,"Solve the following math problem: A car's fuel efficiency is 25 miles per gallon. If the car has a 15-gallon tank, how many miles can it travel on a full tank?
+Answer: 375 miles",Distance-Rate-Time,Medium,3
+92,A recipe requires 4 cups of flour for 2 loaves of bread. How much flour is needed for 5 loaves?,10,"Flour per loaf = 4 cups / 2 loaves = 2 cups/loaf
+Flour for 5 loaves = 2 cups/loaf * 5 = 10 cups","Solve the following math problem: A recipe requires 4 cups of flour for 2 loaves of bread. How much flour is needed for 5 loaves?
+Answer: 30 cups of flour are needed for 5 loaves of bread.",Proportion Problems,Easy,1
+93,"If a person earns $50,000 a year and receives a 10% raise, what will their new salary be?","55,000","New salary = $50,000 * (1 + 0.10) = $55,000","Solve the following math problem: If a person earns $50,000 a year and receives a 10% raise, what will their new salary be?
+Answer: $55,000",Percentage Problems,Easy,8
+94,A triangle has two sides of lengths 5 and 12. What is the length of the third side if the perimeter is 30?,13,"Let third side = x, 5 + 12 + x = 30
+x = 30 - 17 = 13","Solve the following math problem: A triangle has two sides of lengths 5 and 12. What is the length of the third side if the perimeter is 30?
+Answer: 10",Geometry,Medium,3
+95,"If 75% of a number is 60, what is the number?",80,"Let number = x, 0.75x = 60
+x = 60 / 0.75 = 80","Solve the following math problem: If 75% of a number is 60, what is the number?
+Answer: 80",Percentage Problems,Medium,4
+96,"A boat can travel at 15 miles per hour in still water. If the current is 3 miles per hour, what is the boat's speed upstream?",12,Upstream speed = boat speed - current speed = 15 - 3 = 12 miles/hour,"Solve the following math problem: A boat can travel at 15 miles per hour in still water. If the current is 3 miles per hour, what is the boat's speed upstream?
+Answer: 12 miles per hour",Current-Speed Problems,Medium,2
+97,"A box contains 20 chocolates, 12 are dark chocolate. What fraction of the chocolates are not dark chocolate?",2/5,"Number of non-dark chocolates = 20 - 12 = 8
+Fraction not dark = 8 / 20 = 2/5","Solve the following math problem: A box contains 20 chocolates, 12 are dark chocolate. What fraction of the chocolates are not dark chocolate?
+Answer: 8/20",Fractions,Easy,3
+98,A car can travel 300 miles on 10 gallons of gas. How many miles can it travel on 25 gallons?,750,"Miles per gallon = 300 miles / 10 gallons = 30 miles/gallon
+Distance = 30 miles/gallon * 25 gallons = 750 miles","Solve the following math problem: A car can travel 300 miles on 10 gallons of gas. How many miles can it travel on 25 gallons?
+Answer: 450 miles",Distance-Rate-Time,Medium,3
+99,"A restaurant bill is $120. If you want to leave a 15% tip, how much should you leave?",18,Tip = 15% of $120 = 0.15 * 120 = $18,"Solve the following math problem: A restaurant bill is $120. If you want to leave a 15% tip, how much should you leave?
+Answer: $18",Percentage Problems,Easy,3
+100,"A package weighs 8 pounds. If you want to divide it into 4 equal parts, how much does each part weigh?",2,Weight per part = 8 pounds / 4 = 2 pounds,"Solve the following math problem: A package weighs 8 pounds. If you want to divide it into 4 equal parts, how much does each part weigh?
+Answer: 2 pounds",Division,Easy,1
